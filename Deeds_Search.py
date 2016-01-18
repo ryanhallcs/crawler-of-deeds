@@ -45,7 +45,7 @@ class SearchRecordOfDeedsPin():
     PINFILE = "pins.txt"
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome(executable_path=r"C:\Users\blitzgren\Downloads\chromedriver_win32\chromedriver.exe")
         self.driver.implicitly_wait(10)
         self.base_url = "http://162.217.184.82"
         self.verificationErrors = []
